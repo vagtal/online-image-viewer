@@ -1,1 +1,120 @@
-/* Add styles here */
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 40px; /* Space for the top controls */
+  border: 2px dashed #ccc;
+  /* Give the container a fixed square size to prevent layout shifts on rotation */
+  width: 420px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+#imagePreview {
+  /* Let the image fill the container, but not exceed its original max dimensions */
+  max-width: 400px;
+  max-height: 400px; /* Increase max-height to accommodate rotation */
+  transition: transform 0.3s ease;
+}
+
+.top-controls {
+    position: absolute;
+    top: -40px; /* Position above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    gap: 10px;
+}
+
+.top-controls button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px; /* Adjusted for consistency */
+    border-radius: 5px;
+    line-height: 1;
+}
+
+.top-controls button:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#syncButton {
+    background-color: #28a745; /* Green for sync */
+}
+
+#syncButton:hover {
+    background-color: #218838;
+}
+
+.modal {
+  display: none; /* Initially hidden */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#fullscreenImage {
+    width: auto; /* Let the height determine the width, maintaining aspect ratio */
+    height: 100vh; /* vh unit ensures it's relative to viewport height */
+    transition: transform 0.3s ease;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+}

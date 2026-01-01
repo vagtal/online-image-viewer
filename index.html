@@ -1,14 +1,38 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Image Viewer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <h1>Image Viewer</h1>
+
+  <div class="image-container">
+    <div class="top-controls">
+        <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
+        <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
+        <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
+    </div>
+    <img id="imagePreview" src="" alt="Image preview">
+  </div>
+
+  <div class="controls">
+    <input type="file" id="imageInput" accept="image/*">
+    <button id="prevButton">Prev</button>
+    <button id="nextButton">Next</button>
+    <button id="saveButton">Save</button>
+    <button id="syncButton">Sync</button> <!-- Added Sync Button -->
+    <button id="deleteButton">Delete</button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="fullscreenModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullscreenImage">
+  </div>
+
+  <script type="module" src="main.js"></script>
+
 </body>
 </html>
