@@ -140,10 +140,11 @@ const setupRealtimeListener = () => {
 
     if (!syncedImageUrl) {
       updateImageUI(false);
-      imagePreview.src = "";
-      fullscreenImage.src = "";
+      imagePreview.removeAttribute('src');
+      fullscreenImage.removeAttribute('src');
       localImageFile = null;
       currentRotation = 0;
+      imageInput.value = null; // Reset file input
       return;
     }
 
