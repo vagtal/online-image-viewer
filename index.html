@@ -2,28 +2,35 @@
 <html>
 <head>
   <title>Image Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Image Viewer</h1>
-
-  <div class="image-container">
-    <div class="top-controls">
-        <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
-        <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
-        <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
-    </div>
-    <img id="imagePreview" src="" alt="Image preview">
+  <div id="spinner-overlay" class="spinner-overlay">
+    <div class="spinner"></div>
   </div>
 
-  <div class="controls">
-    <input type="file" id="imageInput" accept="image/*">
-    <button id="prevButton">Prev</button>
-    <button id="nextButton">Next</button>
-    <button id="saveButton">Save</button>
-    <button id="syncButton">Sync</button> <!-- Added Sync Button -->
-    <button id="deleteButton">Delete</button>
+  <div class="main-content">
+    <h1>Image Viewer</h1>
+    <div class="image-container">
+      <div class="top-controls">
+          <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
+          <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
+          <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
+      </div>
+      <img id="imagePreview" src="" alt="Image preview">
+    </div>
+
+    <div class="controls">
+      <input type="file" id="imageInput" accept="image/*" class="file-input">
+      <label for="imageInput" class="button-label">Select File</label>
+      <button id="prevButton">Prev</button>
+      <button id="nextButton">Next</button>
+      <button id="saveButton">Save</button>
+      <button id="syncButton">Sync</button>
+      <button id="deleteButton">Delete</button>
+    </div>
   </div>
 
   <!-- The Modal -->

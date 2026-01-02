@@ -313,3 +313,348 @@
 [error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
 [debug] [2026-01-01T18:13:12.939Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
 [debug] [2026-01-01T18:13:12.939Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:39.046Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:39.047Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:39.049Z] Checked if tokens are valid: false, expires at: 1767294790471
+[debug] [2026-01-01T23:04:39.050Z] Checked if tokens are valid: false, expires at: 1767294790471
+[debug] [2026-01-01T23:04:39.051Z] > refreshing access token with scopes: []
+[debug] [2026-01-01T23:04:39.054Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-01T23:04:39.054Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-01T23:04:39.106Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:39.107Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:39.107Z] Checked if tokens are valid: false, expires at: 1767294790471
+[debug] [2026-01-01T23:04:39.107Z] Checked if tokens are valid: false, expires at: 1767294790471
+[debug] [2026-01-01T23:04:39.108Z] > refreshing access token with scopes: []
+[debug] [2026-01-01T23:04:39.110Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-01T23:04:39.110Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-01T23:04:39.170Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-01T23:04:39.171Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-01T23:04:39.192Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-01T23:04:39.206Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-01T23:04:39.207Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-01T23:04:39.222Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-01T23:04:39.417Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-01T23:04:39.417Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-01T23:04:39.434Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.434Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.435Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.435Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.461Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.461Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.462Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.462Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.463Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.463Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.466Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.466Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.469Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.470Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.473Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-01T23:04:39.473Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.514Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-01T23:04:39.515Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-01T23:04:39.516Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.516Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.517Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.517Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.535Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.535Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.536Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.536Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:39.536Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.536Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.540Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.541Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.544Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-01T23:04:39.545Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.548Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-01T23:04:39.551Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-01T23:04:39.880Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-01T23:04:39.881Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-01T23:04:40.142Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-01T23:04:40.143Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-01T23:04:40.197Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-01T23:04:40.197Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-01T23:04:40.215Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-01T23:04:40.215Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-01T23:04:40.240Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-01T23:04:40.241Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-01T23:04:40.312Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-01T23:04:40.313Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-01T23:04:40.322Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-01T23:04:40.323Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-01T23:04:40.326Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-01T23:04:40.327Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:40.334Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:40.335Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:40.337Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.337Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.337Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-01T23:04:40.601Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-01T23:04:40.602Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:40.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:40.608Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:40.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:40.643Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:40.644Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.644Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.645Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:40.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:40.652Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:40.652Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.652Z] Checked if tokens are valid: true, expires at: 1767312278207
+[debug] [2026-01-01T23:04:40.653Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-01T23:04:40.804Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-01T23:04:40.804Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:40.807Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:40.807Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-01T23:04:41.257Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-01T23:04:41.257Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-01T23:04:41.260Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-01T23:04:41.260Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:26.025Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:26.026Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:26.028Z] Checked if tokens are valid: false, expires at: 1767312278207
+[debug] [2026-01-02T00:27:26.029Z] Checked if tokens are valid: false, expires at: 1767312278207
+[debug] [2026-01-02T00:27:26.030Z] > refreshing access token with scopes: []
+[debug] [2026-01-02T00:27:26.033Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-02T00:27:26.033Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T00:27:26.104Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:26.105Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:26.105Z] Checked if tokens are valid: false, expires at: 1767312278207
+[debug] [2026-01-02T00:27:26.106Z] Checked if tokens are valid: false, expires at: 1767312278207
+[debug] [2026-01-02T00:27:26.106Z] > refreshing access token with scopes: []
+[debug] [2026-01-02T00:27:26.106Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-02T00:27:26.107Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T00:27:26.186Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-02T00:27:26.186Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T00:27:26.206Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T00:27:26.215Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-02T00:27:26.216Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T00:27:26.231Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T00:27:26.536Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T00:27:26.540Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-02T00:27:26.553Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.553Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.554Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.555Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.578Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.579Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.579Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.580Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.580Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.580Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.584Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.584Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.587Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.590Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-02T00:27:26.590Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.863Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T00:27:26.864Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-02T00:27:26.865Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.865Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.865Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.865Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.876Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.876Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.877Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.877Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:26.877Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.878Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.881Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.881Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.885Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-02T00:27:26.885Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:26.889Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-02T00:27:26.889Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T00:27:27.241Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-02T00:27:27.245Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-02T00:27:27.341Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-02T00:27:27.341Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-02T00:27:27.349Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-02T00:27:27.349Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-02T00:27:27.357Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-02T00:27:27.357Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:27.369Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:27.369Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:27.369Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:27.370Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:27.370Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T00:27:27.534Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-02T00:27:27.535Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-02T00:27:27.615Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-02T00:27:27.616Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-02T00:27:27.664Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-02T00:27:27.664Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-02T00:27:27.672Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-02T00:27:27.672Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-02T00:27:27.962Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T00:27:27.966Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:27.973Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:27.973Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:28.001Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:28.004Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:28.005Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:28.005Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:28.005Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:28.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:28.013Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:28.013Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:28.013Z] Checked if tokens are valid: true, expires at: 1767317245216
+[debug] [2026-01-02T00:27:28.013Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T00:27:28.172Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T00:27:28.172Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:28.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:28.177Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T00:27:28.602Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T00:27:28.603Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T00:27:28.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T00:27:28.613Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:41.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:41.771Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:41.773Z] Checked if tokens are valid: false, expires at: 1767317245216
+[debug] [2026-01-02T01:15:41.773Z] Checked if tokens are valid: false, expires at: 1767317245216
+[debug] [2026-01-02T01:15:41.774Z] > refreshing access token with scopes: []
+[debug] [2026-01-02T01:15:41.777Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-02T01:15:41.778Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T01:15:41.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:41.843Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:41.843Z] Checked if tokens are valid: false, expires at: 1767317245216
+[debug] [2026-01-02T01:15:41.844Z] Checked if tokens are valid: false, expires at: 1767317245216
+[debug] [2026-01-02T01:15:41.844Z] > refreshing access token with scopes: []
+[debug] [2026-01-02T01:15:41.844Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-02T01:15:41.845Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T01:15:41.919Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-02T01:15:41.919Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T01:15:41.947Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T01:15:41.969Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-02T01:15:41.969Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-02T01:15:41.987Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T01:15:42.616Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T01:15:42.617Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-02T01:15:42.631Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.631Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.633Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.633Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.658Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.659Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.659Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.659Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.660Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.660Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.664Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.664Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.667Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.668Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.670Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-02T01:15:42.671Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.725Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T01:15:42.726Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[debug] [2026-01-02T01:15:42.727Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.727Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.728Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.728Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.740Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.740Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.741Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.741Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:42.741Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.741Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.752Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.752Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.759Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [none]
+[debug] [2026-01-02T01:15:42.760Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:42.764Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [none]
+[debug] [2026-01-02T01:15:42.765Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com x-goog-quota-user=projects/notion-db-35221
+[debug] [2026-01-02T01:15:43.331Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-02T01:15:43.331Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-02T01:15:43.417Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-02T01:15:43.417Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-02T01:15:43.419Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-02T01:15:43.419Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-02T01:15:43.425Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com 403
+[debug] [2026-01-02T01:15:43.425Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseio.com [omitted]
+[debug] [2026-01-02T01:15:43.428Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-02T01:15:43.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.434Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:43.435Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.435Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.435Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T01:15:43.518Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com 200
+[debug] [2026-01-02T01:15:43.518Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2026-01-02T01:15:43.523Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com 200
+[debug] [2026-01-02T01:15:43.525Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-01-02T01:15:43.529Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-01-02T01:15:43.529Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/notion-db-35221/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2026-01-02T01:15:43.609Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T01:15:43.609Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.618Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.618Z] > authorizing via signed-in user (vagtal@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.655Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.655Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:43.655Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.656Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.656Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.669Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:43.669Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.669Z] Checked if tokens are valid: true, expires at: 1767320140969
+[debug] [2026-01-02T01:15:43.669Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo [none]
+[debug] [2026-01-02T01:15:43.838Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T01:15:43.838Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.842Z] > authorizing via signed-in user (vagtal@gmail.com)
+[debug] [2026-01-02T01:15:43.854Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo 200
+[debug] [2026-01-02T01:15:43.855Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/notion-db-35221/billingInfo {"name":"projects/notion-db-35221/billingInfo","projectId":"notion-db-35221","billingAccountName":"","billingEnabled":false}
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2026-01-02T01:15:43.866Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2026-01-02T01:15:43.867Z] > authorizing via signed-in user (vagtal@gmail.com)
