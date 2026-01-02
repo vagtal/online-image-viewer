@@ -1,5 +1,17 @@
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getFirestore, doc, setDoc, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+// --- SERVICE WORKER REGISTRATION ---
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').then((registration) => {
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, (err) => {
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
 
 // --- CONFIGURATION ---
 const firebaseConfig = {
