@@ -1,18 +1,23 @@
 
+// --- UNREGISTER ALL SERVICE WORKERS ---
+// This is a critical step to remove any corrupted or problematic service workers.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function(registrations) {
+    for(let registration of registrations) {
+      registration.unregister();
+      console.log('Service Worker unregistered successfully');
+    }
+  }).catch(function(err) {
+    console.error('Service Worker unregistration failed: ', err);
+  });
+}
+
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getFirestore, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- SERVICE WORKER REGISTRATION ---
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then((registration) => {
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, (err) => {
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
+
+    console.log('DOMContentLoaded fired. Initializing app.');
 
     // --- CONFIGURATION ---
     const firebaseConfig = {
@@ -32,57 +37,67 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- DOM ELEMENTS ---
     const fullscreenImage = document.getElementById('fullscreenImage');
     const spinnerOverlay = document.getElementById('spinner-overlay');
+    const spinner = document.querySelector('.spinner');
+    let unsubscribe;
 
     // --- HELPERS ---
-    const showSpinner = () => { if(spinnerOverlay) spinnerOverlay.style.display = 'flex'; };
-    const hideSpinner = () => { if(spinnerOverlay) spinnerOverlay.style.display = 'none'; };
+    const showSpinner = () => {
+      if (spinnerOverlay) {
+        spinnerOverlay.style.display = 'flex';
+      }
+      if (spinner) {
+        spinner.style.animation = 'none';
+        void spinner.offsetWidth; // Trigger a reflow
+        spinner.style.animation = ''; 
+      }
+    };
+    const hideSpinner = () => { if (spinnerOverlay) spinnerOverlay.style.display = 'none'; };
+
+    // --- ERROR HANDLER for image loading ---
+    const imageErrorHandler = () => {
+      console.error("Failed to load synced image.");
+      fullscreenImage.onload = null;
+      fullscreenImage.onerror = null;
+      fullscreenImage.src = "";
+      showSpinner();
+    };
 
     // --- CORE LOGIC ---
     const setupRealtimeListener = () => {
-      showSpinner(); // Start with the spinner on
+      if (unsubscribe) {
+        unsubscribe();
+      }
+      showSpinner();
 
-      onSnapshot(imageDocRef, (doc) => {
+      unsubscribe = onSnapshot(imageDocRef, (doc) => {
         const data = doc.data();
         const syncedImageUrl = data ? data.imageUrl : null;
 
-        // --- This is the fix ---
-        // If the image is deleted in Firestore
         if (!syncedImageUrl) {
-          // Detach event handlers to prevent the error loop
           fullscreenImage.onload = null;
           fullscreenImage.onerror = null;
-          // Now, safely clear the image source
           fullscreenImage.src = "";
-          showSpinner(); // Show spinner to indicate waiting for a new image
+          showSpinner();
           return;
         }
 
-        // If a new or different image URL is received
         if (fullscreenImage.src !== syncedImageUrl) {
-          showSpinner(); // Show spinner while the new image loads
-          
-          // Set up the event handlers for the new image
+          showSpinner();
           fullscreenImage.onload = hideSpinner;
-          fullscreenImage.onerror = () => {
-            console.error("Failed to load synced image.");
-            // Detach handlers, clear src, and wait for a new image
-            fullscreenImage.onload = null;
-            fullscreenImage.onerror = null;
-            fullscreenImage.src = "";
-            showSpinner();
-          };
-
-          // Finally, set the new image source
+          fullscreenImage.onerror = imageErrorHandler;
           fullscreenImage.src = syncedImageUrl;
         } else {
-          // If the image URL is the same and it's already loaded, hide the spinner
-          if (fullscreenImage.complete) {
-             hideSpinner();
+          if (fullscreenImage.complete && fullscreenImage.naturalHeight !== 0) {
+            hideSpinner();
+          } else {
+            showSpinner();
+            fullscreenImage.onload = hideSpinner;
+            fullscreenImage.onerror = imageErrorHandler;
           }
         }
       }, (error) => {
         console.error("Firestore listener failed:", error);
-        showSpinner(); // On error, show spinner and hope for reconnection
+        showSpinner();
       });
     };
 
