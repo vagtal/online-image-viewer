@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Viewer</title>
+  <title>Real-Time Image Sync</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,24 +12,22 @@
   </div>
 
   <div class="main-content">
-    <h1>Image Viewer</h1>
+    <h1>Real-Time Image Sync</h1>
+    
     <div class="image-container">
       <div class="top-controls">
           <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
           <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
           <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
       </div>
-      <img id="imagePreview" src="" alt="Image preview">
+      <img id="imagePreview" src="" alt="Synced image preview">
     </div>
 
     <div class="controls">
       <input type="file" id="imageInput" accept="image/*" class="file-input">
-      <label for="imageInput" class="button-label">Select File</label>
-      <button id="prevButton">Prev</button>
-      <button id="nextButton">Next</button>
-      <button id="saveButton">Save</button>
-      <button id="syncButton">Sync</button>
-      <button id="deleteButton">Delete</button>
+      <label for="imageInput" class="button-label">Select Image</label>
+      <button id="syncButton" class="button">Sync Image</button>
+      <button id="deleteButton" class="button">Delete Image</button>
     </div>
   </div>
 
