@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Real-Time Image Sync</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
@@ -11,16 +12,17 @@
     <div class="spinner"></div>
   </div>
 
-  <div class="main-content">
+  <main class="main-content">
     <h1>Real-Time Image Sync</h1>
     
-    <div class="image-container">
-      <div class="top-controls">
+    <div id="image-container" class="image-container">
+      <span id="placeholder-text">Select an image to sync</span>
+      <img id="imagePreview" src="" alt="Synced image preview" class="hidden">
+      <div id="image-controls" class="top-controls hidden">
           <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
           <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
           <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
       </div>
-      <img id="imagePreview" src="" alt="Synced image preview">
     </div>
 
     <div class="controls">
@@ -29,9 +31,8 @@
       <button id="syncButton" class="button">Sync Image</button>
       <button id="deleteButton" class="button">Delete Image</button>
     </div>
-  </div>
+  </main>
 
-  <!-- The Modal -->
   <div id="fullscreenModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="fullscreenImage">

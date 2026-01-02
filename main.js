@@ -20,7 +20,9 @@ const imageDocRef = doc(db, "syncedImage", "current");
 
 // --- DOM ELEMENTS ---
 const imageInput = document.getElementById('imageInput');
+const placeholderText = document.getElementById('placeholder-text');
 const imagePreview = document.getElementById('imagePreview');
+const imageControls = document.getElementById('image-controls');
 const syncButton = document.getElementById('syncButton');
 const deleteButton = document.getElementById('deleteButton');
 const maximizeButton = document.getElementById('maximizeButton');
@@ -31,61 +33,58 @@ const fullscreenImage = document.getElementById('fullscreenImage');
 const closeModalButton = document.querySelector('.close');
 const spinnerOverlay = document.getElementById('spinner-overlay');
 
-// --- STATE ---
+// --- STATE & HELPERS ---
 let currentRotation = 0;
 let localImageFile = null;
 
-// --- SPINNER CONTROLS ---
 const showSpinner = () => { spinnerOverlay.style.display = 'flex'; };
 const hideSpinner = () => { spinnerOverlay.style.display = 'none'; };
 
-// --- IMAGE MANIPULATION (CANVAS) ---
-
 /**
- * Takes an image file and a rotation in degrees, and returns a Promise
- * that resolves with a new Blob of the rotated image.
+ * Updates the UI to show either the placeholder or the image.
+ * @param {boolean} showImage - If true, shows the image; otherwise, shows the placeholder.
  */
+const updateImageUI = (showImage) => {
+  placeholderText.classList.toggle('hidden', showImage);
+  imagePreview.classList.toggle('hidden', !showImage);
+  imageControls.classList.toggle('hidden', !showImage);
+};
+
 const getRotatedImageBlob = (imageFile, degrees) => {
   return new Promise((resolve, reject) => {
     const image = new Image();
     image.src = URL.createObjectURL(imageFile);
-
     image.onload = () => {
       const canvas = document.createElement('canvas');
       const ctx = canvas.getContext('2d');
-      
-      // Swap width and height for 90 or 270 degree rotations
       const radians = degrees * Math.PI / 180;
       const isVertical = Math.abs(degrees) % 180 === 90;
+
       canvas.width = isVertical ? image.height : image.width;
       canvas.height = isVertical ? image.width : image.height;
 
-      // Move the rotation point to the center of the canvas
       ctx.translate(canvas.width / 2, canvas.height / 2);
-      // Rotate the canvas
       ctx.rotate(radians);
-      // Draw the image, offsetting it so its center is at the canvas center
       ctx.drawImage(image, -image.width / 2, -image.height / 2);
 
-      // Get the result as a Blob
       canvas.toBlob(resolve, 'image/png');
     };
-
-    image.onerror = (err) => reject(err);
+    image.onerror = reject;
   });
 };
-
 
 // --- CORE LOGIC ---
 
 const handleLocalImageSelect = (file) => {
   if (!file) {
     localImageFile = null;
+    updateImageUI(false);
     return;
   }
   localImageFile = file;
   imagePreview.src = URL.createObjectURL(file);
-  currentRotation = 0; // Reset rotation on new image select
+  updateImageUI(true);
+  currentRotation = 0;
   updateRotationStyles();
 };
 
@@ -95,32 +94,21 @@ const syncImageToServer = async () => {
     return;
   }
   showSpinner();
-
   try {
-    // 1. Get the (potentially rotated) image blob from the canvas
     const imageToUpload = await getRotatedImageBlob(localImageFile, currentRotation);
-
-    // 2. Upload the new blob to Imgur
     const formData = new FormData();
     formData.append("image", imageToUpload, localImageFile.name);
 
     const response = await fetch(IMGUR_UPLOAD_URL, {
       method: "POST",
-      headers: {
-        Authorization: `Client-ID ${IMGUR_CLIENT_ID}`,
-      },
+      headers: { Authorization: `Client-ID ${IMGUR_CLIENT_ID}` },
       body: formData,
     });
 
     if (!response.ok) throw new Error(`Imgur API Error: ${response.statusText}`);
-
     const result = await response.json();
+    if (!result.success) throw new Error(`Imgur upload failed: ${result.data.error}`);
 
-    if (!result.success) {
-      throw new Error(`Imgur upload failed: ${result.data.error}`);
-    }
-
-    // 3. Sync the new Imgur URL to Firestore
     await setDoc(imageDocRef, {
       imageUrl: result.data.link,
       timestamp: serverTimestamp(),
@@ -134,19 +122,16 @@ const syncImageToServer = async () => {
 };
 
 const deleteImageForAll = async () => {
-    showSpinner();
-    try {
-        await setDoc(imageDocRef, { 
-            imageUrl: null,
-            timestamp: serverTimestamp()
-        });
-    } catch (error) {
-        console.error("Failed to delete image:", error);
-        alert("Error deleting image. Please try again.");
-    } finally {
-        hideSpinner();
-    }
-}
+  showSpinner();
+  try {
+    await setDoc(imageDocRef, { imageUrl: null, timestamp: serverTimestamp() });
+  } catch (error) {
+    console.error("Failed to delete image:", error);
+    alert("Error deleting image. Please try again.");
+  } finally {
+    hideSpinner();
+  }
+};
 
 const setupRealtimeListener = () => {
   onSnapshot(imageDocRef, (doc) => {
@@ -154,26 +139,27 @@ const setupRealtimeListener = () => {
     const syncedImageUrl = data ? data.imageUrl : null;
 
     if (!syncedImageUrl) {
-        imagePreview.onerror = null;
-        imagePreview.src = "";
-        fullscreenImage.src = "";
-        localImageFile = null; 
-        return;
+      updateImageUI(false);
+      imagePreview.src = "";
+      fullscreenImage.src = "";
+      localImageFile = null;
+      currentRotation = 0;
+      return;
     }
 
     if (imagePreview.src !== syncedImageUrl) {
       showSpinner();
       imagePreview.src = syncedImageUrl;
       fullscreenImage.src = syncedImageUrl;
-      
-      // When a new image is synced from the server, the local rotation should be reset.
+      updateImageUI(true);
       currentRotation = 0;
       updateRotationStyles();
-      
-      imagePreview.onload = () => hideSpinner();
+
+      imagePreview.onload = hideSpinner;
       imagePreview.onerror = () => {
         hideSpinner();
-        alert("Failed to load the synced image from Imgur.");
+        updateImageUI(false);
+        alert("Failed to load the synced image.");
       };
     }
   }, (error) => {
@@ -185,24 +171,23 @@ const setupRealtimeListener = () => {
 // --- UI FUNCTIONS ---
 
 const updateRotationStyles = () => {
-    const rotationStyle = `rotate(${currentRotation}deg)`;
-    imagePreview.style.transform = rotationStyle;
-    fullscreenImage.style.transform = rotationStyle;
-
-    const isVertical = Math.abs(currentRotation) % 180 === 90;
-    fullscreenImage.classList.toggle('fullscreen-image-vertical', isVertical);
-}
+  const rotationStyle = `rotate(${currentRotation}deg)`;
+  imagePreview.style.transform = rotationStyle;
+  fullscreenImage.style.transform = rotationStyle;
+  const isVertical = Math.abs(currentRotation) % 180 === 90;
+  fullscreenImage.classList.toggle('fullscreen-image-vertical', isVertical);
+};
 
 const rotatePreview = (degrees) => {
-  if (!imagePreview.src) return;
+  if (!imagePreview.src || imagePreview.classList.contains('hidden')) return;
   currentRotation += degrees;
   updateRotationStyles();
 };
 
 const openModal = () => {
-  if (imagePreview.src) {
+  if (imagePreview.src && !imagePreview.classList.contains('hidden')) {
     fullscreenImage.src = imagePreview.src;
-    updateRotationStyles(); 
+    updateRotationStyles();
     modal.style.display = "flex";
   }
 };
@@ -222,4 +207,5 @@ closeModalButton.addEventListener('click', closeModal);
 modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
 // --- INITIAL SETUP ---
+updateImageUI(false); // Ensure placeholder is shown initially
 setupRealtimeListener();
