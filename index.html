@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
-  <title>Real-Time Image Sync</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div id="spinner-overlay" class="spinner-overlay">
+  <div id="spinner-overlay" class="spinner-overlay" style="display: flex;">
     <div class="spinner"></div>
   </div>
 
-  <main class="main-content">
-    <h1>Real-Time Image Sync</h1>
-    
-    <div id="image-container" class="image-container">
-      <span id="placeholder-text">Select an image to sync</span>
-      <img id="imagePreview" src="" alt="Synced image preview" class="hidden">
-      <div id="image-controls" class="top-controls hidden">
-          <button id="rotateLeftButton" title="Rotate Left">&#x21BA;</button>
-          <button id="maximizeButton" title="Fullscreen">&#x26F6;</button>
-          <button id="rotateRightButton" title="Rotate Right">&#x21BB;</button>
-      </div>
-    </div>
-
-    <div class="controls">
-      <input type="file" id="imageInput" accept="image/*" class="file-input">
-      <label for="imageInput" class="button-label">Select Image</label>
-      <button id="syncButton" class="button">Sync Image</button>
-      <button id="deleteButton" class="button">Delete Image</button>
-    </div>
-  </main>
-
   <div id="fullscreenModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="fullscreenImage">
+    <img class="modal-content" id="fullscreenImage" src="">
   </div>
 
   <script type="module" src="main.js"></script>
 
-</body>
-</html>
+
+</body></html>
